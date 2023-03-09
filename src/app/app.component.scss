@@ -1,0 +1,18 @@
+.slideshow-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideshow-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: 4s ease zoom infinite;
+}
+ 
+@keyframes zoom {
+   from {transform: scale(1);}
+
+    to {transform: scale(1.2);}
+}

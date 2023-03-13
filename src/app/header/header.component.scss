@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 50px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    img {
+        width: 100px;
+    }
+
+    a {
+        color: white;
+        margin-right: 1rem;
+        font-size: 1rem;
+    }
+
+    a:last-of-type {
+        margin-right: unset;
+    }
+    
+
+}

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class SlideshowComponent implements OnInit{
   title = 'Angular-Homepage';
+  headers= ['Born to code', 'Graduated from TMU', 'Revolutionize Engineering']
   images= ['img1.jpg', 'img2.jpg', 'img3.jpg'];
   currentImage= 0;
 

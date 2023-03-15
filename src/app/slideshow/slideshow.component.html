@@ -1,7 +1,26 @@
-<div class="slideshow-container">
-    <img src="assets/img/{{images[currentImage]}}" alt="nature-pic" class="slideshow-pic">
-  </div>
-  
+<div class="slideshow-container" id="scurr">
+  <img
+    *ngIf="currentImage == 0"
+    src="assets/img/img1.jpg"
+    alt="nature-pic"
+    class="slideshow-pic"
+  />
+  <img
+    *ngIf="currentImage == 1"
+    src="assets/img/img2.jpg"
+    alt="nature-pic"
+    class="slideshow-pic"
+  />
+  <img
+    *ngIf="currentImage == 2"
+    src="assets/img/img3.jpg"
+    alt="nature-pic"
+    class="slideshow-pic"
+  />
   <div class="overlay">
-    <h1>{{headers[currentImage]}}</h1>
+    <h1>{{ headers[currentImage] }}</h1>
+    <i class="bi bi-arrow-down-circle-fill"></i>
   </div>
+</div>
+
+

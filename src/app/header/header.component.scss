@@ -4,20 +4,20 @@
   left: 0;
   right: 0;
   padding: 20px 50px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   img {
-    width: 100px;
+    width: 80px;
     cursor: pointer;
   }
 
   a {
     color: white;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     transition: 225ms all ease-in-out;

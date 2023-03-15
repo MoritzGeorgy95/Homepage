@@ -19,6 +19,7 @@
   .project-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 6rem;
     gap: 100px;
 
@@ -86,7 +87,7 @@
       position: relative;
       display: block;
       color: salmon;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 600;
       border-radius: 7px;
       cursor: pointer;

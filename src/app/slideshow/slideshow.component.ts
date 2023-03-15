@@ -8,7 +8,7 @@ import { Component, OnInit} from '@angular/core';
 
 export class SlideshowComponent implements OnInit {
   title = 'Angular-Homepage';
-  headers= ['Born to code', 'Graduated from TMU', 'Revolutionize Engineering'];
+  headers= ['Homepage Moritz Georgy', 'Check Bio Below', 'Take A Look At My Projects'];
   imageUrls = ["assets/img/img1.jpg", "assets/img/img2.jpg", "assets/img/img3.jpg"];
   currentImage= 0;
   imageObjects: HTMLImageElement[] = [];
@@ -26,7 +26,7 @@ ngOnInit() {
      setInterval(
       () => {
         this.currentImage = (this.currentImage + 1) % this.imageUrls.length;
-      }, 4000
+      }, 5000
      )
   }
 }

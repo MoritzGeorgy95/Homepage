@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
   <app-slideshow></app-slideshow>
   <app-about></app-about>
+  <app-projects></app-projects>
 `,
   styleUrls: ['./home.component.scss']
 })

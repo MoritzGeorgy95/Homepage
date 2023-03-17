@@ -1,0 +1,105 @@
+.contact-container {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, #ffffff, #ffe1d1);
+    position: relative;
+
+    .bubble {
+        position: absolute;
+        background: linear-gradient(to bottom right, #ffe5de, salmon);
+        border-radius: 50%;
+      }
+      .bubble-1 {
+        width: 50px;
+        height: 50px;
+        left: 18rem;
+        bottom: 2.5rem;
+      }
+      .bubble-2 {
+        width: 250px;
+        height: 250px;
+        left: -8rem;
+        bottom: 0;
+      }
+      .bubble-3 {
+        width: 80px;
+        height: 80px;
+        left: 10rem;
+        bottom: 3rem;
+      }
+}
+
+
+.text-container {
+    width: 50%;
+    h1, h2 {
+        color: salmon;
+    }
+    p {
+        font-weight: 600;
+        font-size: .9rem;
+    }
+    z-index: 1;
+}
+
+.form-container {
+    width: 40%;
+    z-index: 1;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .validation-warning {
+        width: 100%;
+        margin-top: 7px;
+        margin-left: -1rem;
+        color: salmon;
+    }
+
+    input, textarea {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid salmon;
+        padding: 10px;
+        margin-top: 2rem;
+        resize: none;
+    }
+
+    input:first-of-type {
+        margin-top: 0;
+    }
+
+    input::placeholder, textarea::placeholder {
+        font-size: 1rem;
+        font-family: 'Monteserrat', sans-serif;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+        box-shadow: 12px 12px 1px 1px rgba(250, 128, 114, 0.725);
+    }
+
+    button {
+        padding: 10px 40px;
+        border-radius: 7px;
+        background: salmon;
+        color: white;
+        font-size: 1.3rem;
+        border: none;
+        margin-top: 2rem;
+        cursor: pointer;
+        transition: 225ms all ease-in-out;
+
+        &:hover {
+            color: salmon;
+            outline: 2px solid salmon;
+            background: white;
+        }
+    }
+}

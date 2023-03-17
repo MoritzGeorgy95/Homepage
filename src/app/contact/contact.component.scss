@@ -4,6 +4,7 @@
     justify-content: space-between;
     background: linear-gradient(to bottom right, #ffffff, #ffe1d1);
     position: relative;
+    height: calc(80vh - 200px);
 
     .bubble {
         position: absolute;
@@ -14,13 +15,13 @@
         width: 50px;
         height: 50px;
         left: 18rem;
-        bottom: 2.5rem;
+        bottom: 1.5rem;
       }
       .bubble-2 {
         width: 250px;
         height: 250px;
         left: -8rem;
-        bottom: 0;
+        bottom: 2rem;
       }
       .bubble-3 {
         width: 80px;
@@ -54,12 +55,31 @@ form {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    position: relative;
 
     .validation-warning {
         width: 100%;
-        margin-top: 7px;
-        margin-left: -1rem;
         color: salmon;
+        position: absolute;
+        color: black;
+        background: rgba(255, 255, 255, .8);
+        border-radius: 5px;
+        left: -10px;
+        padding: 0 7px;
+        outline: 1px solid black;
+    }
+
+    .vw1 {
+        top: 46px;
+         }
+       
+
+    .vw2 {
+        top: 121px;
+    }
+
+    .vw3 {
+        top: 358px;
     }
 
     input, textarea {

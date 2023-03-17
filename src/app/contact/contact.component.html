@@ -11,13 +11,13 @@
   <div class="form-container">
     <form (ngSubmit)="submitForm()" #contactForm="ngForm">
         <input placeholder="Name" #nameInput= "ngModel" required type="text" name="name" [(ngModel)]="name">
-        <div class="validation-warning" *ngIf="nameInput.invalid && nameInput.touched">Field is required.</div>
+        <div class="validation-warning vw1" *ngIf="nameInput.invalid && nameInput.touched">Field is required.</div>
 
         <input placeholder="E-Mail" #emailInput= "ngModel" required type="email" name="email"[(ngModel)]="email"> 
-        <div class="validation-warning" *ngIf="emailInput.invalid && emailInput.touched">Field is required and needs to be a valid email.</div>
+        <div class="validation-warning vw2" *ngIf="emailInput.invalid && emailInput.touched">Field is required and needs to be a valid email.</div>
 
         <textarea #messageInput="ngModel" placeholder="Nachricht" required name="message" id="" cols="30" rows="10" [(ngModel)]="message"></textarea>
-        <div class="validation-warning" *ngIf="messageInput.invalid && emailInput.touched">A message is required.</div>
+        <div class="validation-warning vw3" *ngIf="messageInput.invalid && emailInput.touched">A message is required.</div>
 
         <button id="sendButton" [disabled]= "contactForm.invalid" type="submit">Senden</button>
     </form>

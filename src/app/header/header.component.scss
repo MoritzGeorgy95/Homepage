@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   padding: 20px 50px;
-  z-index: 2;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,5 +28,16 @@
 
   a:last-of-type {
     margin-right: unset;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header {
+    padding: 20px 10px;
+    justify-content: center;
+
+    img {
+      margin-right: 20px;
+    }
   }
 }

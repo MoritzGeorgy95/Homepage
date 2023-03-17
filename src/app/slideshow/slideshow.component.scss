@@ -3,7 +3,7 @@
     height: 100vh;
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .slideshow-pic {
@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 2rem;
 
     h1 {
         color: white;
@@ -59,5 +60,14 @@
         width: 50%;
         height: 50%;
         background-color: white;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .overlay {
+        h1 {
+            font-size: 4rem;
+            word-break: break-word;
+        }
     }
 }

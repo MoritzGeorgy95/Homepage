@@ -24,6 +24,10 @@
     margin-bottom: 6rem;
     gap: 100px;
 
+    bg-mobile {
+      background: initial;
+    }
+
     .img-wrapper {
       position: relative;
       img {
@@ -195,4 +199,40 @@
       font-weight: 600;
     }
   }
+}
+
+@media screen and (max-width: 1100px) {
+  .project-container {
+    padding: 0 50px;
+    .project-wrapper {
+      flex-direction: column-reverse;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      .project-text {
+        align-items: center;
+
+        p {
+          text-align: center;
+        }
+      }
+
+      .img-wrapper {
+        display: flex;
+        justify-content: center;
+        img {
+          min-width: unset;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) { 
+  .project-container {
+    .bubble {
+      display: none !important;
+    } 
+  }
+   
+
 }

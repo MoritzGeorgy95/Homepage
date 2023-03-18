@@ -203,16 +203,35 @@
 
 @media screen and (max-width: 1100px) {
   .project-container {
-    padding: 0 50px;
+    padding: 0;
+    .bubble {
+      display: none !important;
+    }
+
+    .description {
+      h1, p {
+        text-align: center;
+      }
+
+      p {
+        font-weight: 600;
+      }
+
+    }
     .project-wrapper {
       flex-direction: column-reverse;
-      gap: 4rem;
-      margin-bottom: 4rem;
+      gap: 1rem;
+      padding: 0 1rem;
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      
       .project-text {
         align-items: center;
 
         p {
           text-align: center;
+          margin-top: 1rem;
+          font-weight: 500;
         }
       }
 
@@ -224,14 +243,27 @@
         }
       }
     }
+    .bg-mobile {
+      background: linear-gradient(to bottom right, #ffffff, salmon);;
+    }
   }
 }
 
 @media screen and (max-width: 660px) { 
-  .project-container {
-    .bubble {
-      display: none !important;
-    } 
+  .project-container {    
+    
+
+    .description {
+
+     
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      
+    }    
+    
   }
    
 

@@ -31,6 +31,10 @@
   }
 }
 
+.dark {
+  background: salmon;
+}
+
 @media screen and (max-width: 450px) {
   .header {
     padding: 20px 10px;

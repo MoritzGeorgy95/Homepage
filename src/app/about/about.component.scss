@@ -198,3 +198,40 @@
       margin-top: 1rem;
     }
 } }
+
+@media screen and (min-width: 1700px) {
+  .about-me-container {
+
+    .description-container {
+      max-width: 800px;
+      position: absolute;
+      left: 50%;
+      transform: unset;
+      transform: translateX(-30%);
+      h1:first-of-type {
+        font-size: 4.5rem;
+        
+      }
+  
+      h1:last-of-type {
+        font-size: 6.5rem;
+        margin: 0;
+        color: salmon;
+      }
+  
+      p {
+        font-weight: 500;
+        line-height: 120%;
+        font-size: 1.8rem;
+      }
+    }
+
+    .channel-container {
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+

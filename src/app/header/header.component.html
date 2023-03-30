@@ -1,8 +1,26 @@
-<div class="header" [class.dark]="lightMode">
-
+<div class="header" [class.dark]="lightMode" *ngIf="!mobile">
   <img src="./assets/img/logo.png" alt="logo" />
   <div>
-    <a routerLink="/">Home</a><a href="https://www.linkedin.com/in/moritz-georgy-81560a167/"
-    target="_blank">Curriculum</a><a href="#projectContainer">Projects</a>
+    <a routerLink="/">Home</a
+    ><a href="#" (click)="showPlaceholder()" target="_blank">Curriculum</a
+    ><a href="#projectContainer">Projects</a>
+  </div>
+</div>
+
+
+<div *ngIf="mobile" class="header-mobile">
+  <img src="./assets/img/logo.png" alt="logo" />
+  <i class="fa-solid fa-bars" style="color: #ffffff;" id="mobile-menu" (click)="openMobileMenu()"></i>
+</div>
+
+<div class="menu-mobile" *ngIf="menuOpen">
+  <div>
+    <img src="./assets/img/logo.png" alt="logo" />
+    <i class="fa-solid fa-xmark" style="color: #000000;"  (click)="closeMobileMenu()"></i>
+  </div>
+  <div>
+    <a routerLink="/" (click)="closeMobileMenu()">Home</a
+    ><a href="#" (click)="showPlaceholder()" target="_blank" (click)="closeMobileMenu()">Curriculum</a
+    ><a href="#projectContainer" (click)="closeMobileMenu()">Projects</a>
   </div>
 </div>

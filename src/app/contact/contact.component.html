@@ -11,7 +11,7 @@
   <div class="form-container">
     <form (ngSubmit)="submitForm()" #contactForm="ngForm">
       <input
-        placeholder="Name"
+        placeholder="Name*"
         #nameInput="ngModel"
         required
         type="text"
@@ -26,13 +26,14 @@
       </div>
 
       <input
-        placeholder="E-Mail"
+        placeholder="E-Mail*"
         #emailInput="ngModel"
         required
         type="email"
         name="email"
         [(ngModel)]="email"
-      />
+        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+      /> 
       <div
         class="validation-warning vw2"
         *ngIf="emailInput.invalid && emailInput.touched"
@@ -42,7 +43,7 @@
 
       <textarea
         #messageInput="ngModel"
-        placeholder="Message"
+        placeholder="Message*"
         required
         name="message"
         id=""
@@ -52,7 +53,7 @@
       ></textarea>
       <div
         class="validation-warning vw3"
-        *ngIf="messageInput.invalid && emailInput.touched"
+        *ngIf="messageInput.invalid && messageInput.touched"
       >
         A message is required.
       </div>

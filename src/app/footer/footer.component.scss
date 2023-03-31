@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, #ffa07a, salmon);
-
+  
   img {
     width: 100px;
   }
@@ -62,4 +62,11 @@
       margin-top: 2rem;
     }
   }
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }

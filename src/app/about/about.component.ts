@@ -12,7 +12,7 @@ export class AboutComponent implements AfterViewInit{
 
 
   @ViewChild('el1') el1: ElementRef;
-  @ViewChild('el2') el2: ElementRef;
+  
 
 
 
@@ -33,6 +33,5 @@ export class AboutComponent implements AfterViewInit{
         { threshold }
     );
     observer.observe(this.el1.nativeElement);
-    observer.observe(this.el2.nativeElement);
   }
 }

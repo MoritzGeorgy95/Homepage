@@ -1,3 +1,11 @@
+:root {
+  --y: -50%;
+}
+
+
+
+
+
 .about-me-container {
   height: 100vh;
   background: linear-gradient(to bottom right, #ffffff, #ffe1d1);
@@ -80,10 +88,7 @@
     display: flex;
     align-items: center;
     margin-top: 50px;
-    opacity: 0;
-    &.fly-in {
-      animation: fly-in-2 1s ease-out forwards;
-    }
+    
     p {
       font-weight: 600;
       font-size: 1.3rem;
@@ -137,30 +142,41 @@
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(--y);
     opacity: 1;
   }
 }
 
-@keyframes fly-in-2 {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
+
 
 @media screen and (max-width: 1200px) {
+
+  :root {
+    --y: -30%;
+  }
+
   .about-me-container {
     .description-container {
       transform: translateX(-30%);
     }
   }
+  @keyframes fly-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(--y);
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
+
+  :root {
+    --y: 0;
+  }
+
   .about-me-container {
     flex-direction: column; 
     align-items: center;
@@ -193,11 +209,22 @@
         text-align: center;
       }
     }
+   
     
   }
 
   #linebreak {
     display: none;
+  }
+
+  @keyframes fly-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(--y);
+      opacity: 1;
+    }
   }
   
 }
@@ -228,6 +255,11 @@
 } }
 
 @media screen and (min-width: 1700px) {
+
+  :root {
+    --y: -30%;
+  }
+
   .about-me-container {
 
     .description-container {
@@ -258,6 +290,16 @@
       i {
         font-size: 2.5rem;
       }
+    }
+  }
+
+  @keyframes fly-in {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-30%);
+      opacity: 1;
     }
   }
 }

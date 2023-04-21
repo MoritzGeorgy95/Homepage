@@ -5,7 +5,15 @@
   text-align: center;
   padding: 100px 100px 0 100px;
   position: relative;
-  border-top: 2px solid salmon;
+
+  .skewed-border {
+    border: 2px solid salmon;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    transform: rotate(5deg);
+  }
 
   h1 {
     color: white;

@@ -1,23 +1,33 @@
 <div class="header" [class.dark]="lightMode" *ngIf="!mobile">
   <!-- <img src="./assets/img/logo.png" alt="logo" /> -->
-  <a class="header-firstname" href="#">Morit<span>z</span></a>
+  <a class="header-firstname" routerLink="/">Morit<span>z</span></a>
   <div>
-    <a routerLink="/">Home</a
-    ><a href="#aboutMe">About Me</a
-    ><a href="#projectContainer">Projects</a>
+    <a href="#aboutMe">About Me</a>
+    <a href="#skillsContainer">Skills</a>
+    <a href="#projectContainer">Projects</a>
   </div>
 </div>
 
-
 <div *ngIf="mobile" class="header-mobile">
-  <a class="header-firstname" href="#">Morit<span style="color: salmon;">z</span></a>
-  <i class="fa-solid fa-bars" style="color: #ffffff;" id="mobile-menu" (click)="openMobileMenu()"></i>
+  <a class="header-firstname" href="#"
+    >Morit<span style="color: salmon">z</span></a
+  >
+  <i
+    class="fa-solid fa-bars"
+    style="color: #ffffff"
+    id="mobile-menu"
+    (click)="openMobileMenu()"
+  ></i>
 </div>
 
 <div class="menu-mobile" *ngIf="menuOpen">
   <div>
     <img src="./assets/img/logo.png" alt="logo" />
-    <i class="fa-solid fa-xmark" style="color: #000000;"  (click)="closeMobileMenu()"></i>
+    <i
+      class="fa-solid fa-xmark"
+      style="color: #000000"
+      (click)="closeMobileMenu()"
+    ></i>
   </div>
   <div>
     <a routerLink="/" (click)="closeMobileMenu()">Home</a

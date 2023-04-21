@@ -36,7 +36,4 @@ export class HeaderComponent {
     this.menuOpen = false;
   }
 
-  showPlaceholder() {
-    alert('Lebenslauf muss ich noch aktualisieren. In Arbeit');
-  }
 }

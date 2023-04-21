@@ -33,7 +33,7 @@
   .description-container {
     max-width: 600px;
     padding-top: 100px;
-    transform: translateX(-50%);
+    transform: translateX(-40%);
     opacity: 0;
     &.fly-in {
       animation: fly-in 1s ease-out forwards;
@@ -64,7 +64,7 @@
     justify-content: center;
     position: absolute;
     bottom: 3rem;
-    left: 3rem;
+    left: 100px;
     gap: 50px;
     margin-top: 50px;
 
@@ -207,6 +207,7 @@
       p {
         font-size: 1rem;
         text-align: center;
+        padding: 0 10px;
       }
     }
    

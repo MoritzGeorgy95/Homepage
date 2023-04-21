@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 50px;
+  padding: 37px 100px;
   z-index: 5;
   display: flex;
   justify-content: space-between;
@@ -17,22 +17,40 @@
   a {
     color: white;
     margin-right: 1rem;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 23px;
+    font-weight: 500;
     text-decoration: none;
     transition: 225ms all ease-in-out;
     &:hover {
-      color: rgba(255, 255, 255, 0.5);
+      color: salmon;
     }
   }
 
   a:last-of-type {
     margin-right: unset;
   }
+
+  .header-firstname {
+    color: white;
+    font-size: 37px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 225ms all ease-in-out;
+    span {
+      color: salmon;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .dark {
   background: salmon;
+  span {
+    color: white !important;
+  }
 }
 
 
@@ -47,9 +65,16 @@
   justify-content: space-between;
   align-items: center;
 
-  img {
-    width: 80px;
-    cursor: pointer;
+  .header-firstname {
+    color: white;
+    font-size: 37px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 225ms all ease-in-out;
+
+    &:hover {
+      color: white;
+    }
   }
 
   #mobile-menu {

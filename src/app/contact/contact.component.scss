@@ -20,6 +20,7 @@
 
 .text-container {
   width: 50%;
+  opacity: 0;
   position: relative;
   h1 {
     color: white;
@@ -51,6 +52,7 @@
 .form-container {
   width: 40%;
   z-index: 1;
+  opacity: 0;
 }
 
 form {
@@ -88,7 +90,7 @@ form {
   textarea {
     width: 100%;
     border-radius: 10px;
-    border: 2px solid salmon;
+    border: 2px solid white;
     padding: 10px;
     margin-top: 2rem;
     resize: none;
@@ -107,7 +109,7 @@ form {
   input,
   textarea {
     font-size: 1rem;
-    box-shadow: 12px 12px 1px 1px #fcb4aa;
+    box-shadow: 12px 12px 1px 1px #464D5A;
   }
 
   button {
@@ -138,6 +140,23 @@ form {
     }
   }
 }
+
+.fly-in {
+  animation: fly-in 1s ease-out forwards;
+}
+
+
+@keyframes fly-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 
 @media screen and (max-width: 1000px) {
   .contact-container {

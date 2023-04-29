@@ -53,20 +53,21 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .footer {
-    flex-direction: column;
-    padding-top: 2rem;
-
-    .channel-container {
-      margin-top: 2rem;
-    }
-  }
-}
-
 .fixed {
   position: fixed;
   bottom: 0;
   right: 0;
   left: 0;
 }
+
+@media screen and (max-width: 750px) {
+  .footer {
+    flex-direction: column;
+    padding-top: 2rem;
+    padding: 50px 50px;
+    .channel-container {
+      margin-top: 2rem;
+    }
+  }
+}
+

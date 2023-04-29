@@ -17,7 +17,8 @@
   }
 
   .skewed-border {
-    border: 2px solid salmon;
+    height: 2px;
+    background-color: salmon;
     position: absolute;
     top: -1rem;
     left: 0;
@@ -209,5 +210,19 @@ form {
       margin-top: 0.5rem;
       border: 2px solid white;
     }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blur {
+      display: none;
+  }
+
+  .skewed-border {
+    display: none;
+  }
+
+  .contact-container {
+    border-top: 2px solid salmon;
   }
 }

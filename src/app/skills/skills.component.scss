@@ -7,7 +7,8 @@
   position: relative;
 
   .skewed-border {
-    border: 2px solid salmon;
+    height: 2px;
+    background-color: salmon;
     position: absolute;
     top: 1rem;
     left: 0;

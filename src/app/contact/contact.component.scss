@@ -173,7 +173,6 @@ form {
     padding: 0 50px;
     align-items: center;
     justify-content: unset;
-    height: 100vh;
   }
 
   .text-container {
@@ -190,6 +189,16 @@ form {
   .form-container {
     width: 80%;
     margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    height: unset;
+  }
+
+  #sendButton {
+    margin-bottom: 1rem;
   }
 }
 

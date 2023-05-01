@@ -1,4 +1,5 @@
 import { Component, Input, HostListener } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,12 +7,12 @@ import { Component, Input, HostListener } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  @Input() lightMode = false;
+ 
 
   mobile = false;
   menuOpen = false;
 
-  constructor() {
+  constructor(public router: Router) {
     this.checkMobile();
   }
 

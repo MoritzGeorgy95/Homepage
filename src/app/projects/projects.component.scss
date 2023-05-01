@@ -5,16 +5,8 @@
   padding: 0 100px;
   background-color: #141d2f;
   background-image: url("/assets/img/curve_vector.png");
-  
-  .skewed-border {
-    height: 2px;
-    background-color: salmon;
-    position: absolute;
-    top: -3rem;
-    left: 0;
-    right: 0;
-    transform: rotate(-5deg);
-  }
+  background-size: cover;
+  outline: 2px solid salmon;
   
   .description {
     margin: 4rem 0;

@@ -2,19 +2,11 @@
   background-color: #141d2f;
   height: 100vh;
   background-image: url("/assets/img/curve_vector.png");
+  background-size: cover;
   text-align: center;
   padding: 100px 100px 0 100px;
   position: relative;
-
-  .skewed-border {
-    height: 2px;
-    background-color: salmon;
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    transform: rotate(5deg);
-  }
+  outline: 2px solid salmon;
 
   h1 {
     color: white;

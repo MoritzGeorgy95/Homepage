@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #141d2f;
-  border-top: 2px solid salmon;
+  outline: 2px solid salmon;
   img {
     width: 100px;
   }
@@ -71,3 +71,12 @@
   }
 }
 
+@media screen and (max-height: 820px) {
+  .hidden {
+    display: none;
+  }
+
+  .fixed {
+    padding: 1rem;
+  }
+}

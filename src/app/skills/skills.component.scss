@@ -77,3 +77,11 @@
     }
   }
 }
+
+@media screen and (max-height: 720px) {
+    .skill-section-container {
+      h1 {
+        font-size: 3.5rem;
+      }
+    }
+}

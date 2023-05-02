@@ -12,17 +12,20 @@
   justify-content: space-between;
   position: relative;
   color: white;
+ 
 
   .background-bubble {
     width: 30%;
     height: 0;
     position: relative;
     padding-bottom: 30%;
+    max-width: 600px;
     background: linear-gradient(to bottom right, #ffe5de, salmon);
     border-radius: 50%;
     margin-top: -80px;
     margin-left: -80px;
     outline: 10px solid white;
+    
 
     .channel-container {
       display: flex;

@@ -8,6 +8,12 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
+  isLoading= true;
   constructor(public router: Router) {}
 
+  ngOnInit() {
+    setTimeout(()=> {
+      this.isLoading= false;
+    }, 2500)
+  }
 }

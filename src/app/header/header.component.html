@@ -1,4 +1,4 @@
-<div class="header" *ngIf="!mobile" [ngStyle]="{'background-color': router.url == '/imprint' || router.url == '/dataprot' ? '#141d2f' : 'unset'}">
+<div class="header" *ngIf="!mobile" [ngClass]="{'alt-route': router.url == '/imprint' || router.url == '/dataprot'}">
   <a class="header-firstname" routerLink="/">Morit<span>z</span></a>
   <div>
     <a href="#aboutMe">About Me</a>
@@ -7,7 +7,7 @@
   </div>
 </div>
 
-<div *ngIf="mobile" class="header-mobile" [ngStyle]="{'background-color': router.url == '/imprint' || router.url == '/dataprot' ? '#141d2f' : 'unset'}" >
+<div *ngIf="mobile" class="header-mobile" [ngClass]="{'alt-route': router.url == '/imprint' || router.url == '/dataprot'}" >
   <a class="header-firstname" href="#"
     >Morit<span style="color: salmon">z</span></a
   >

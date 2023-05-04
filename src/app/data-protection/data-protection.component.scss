@@ -1,0 +1,9 @@
+.data-prot-container {
+    padding: 0 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .data-prot-container {
+        padding: 0 1rem;
+    }
+}

@@ -19,6 +19,7 @@ export class ProjectsComponent implements AfterViewInit  {
   @ViewChild('proj2') proj2: ElementRef;
   @ViewChild('proj3') proj3: ElementRef;
   @ViewChild('proj4') proj4: ElementRef;
+  @ViewChild('proj5') proj5: ElementRef;
 
   ngAfterViewInit(){
     const threshold = .3; // how much % of the element is in view
@@ -28,10 +29,6 @@ export class ProjectsComponent implements AfterViewInit  {
                 if (entry.isIntersecting) {                 
                   entry.target.classList.add('fly-in');
                 }
-                // else{
-                  
-                //   entry.target.classList.remove('fly-in');
-                // }
             });
         },
         { threshold }
@@ -40,6 +37,7 @@ export class ProjectsComponent implements AfterViewInit  {
     observer.observe(this.proj2.nativeElement);
     observer.observe(this.proj3.nativeElement);
     observer.observe(this.proj4.nativeElement);
+    observer.observe(this.proj5.nativeElement);
   }
 }
 

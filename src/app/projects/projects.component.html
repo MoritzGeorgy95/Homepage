@@ -6,7 +6,7 @@
     </p>
   </div>
 
-  <div class="project-wrapper bg-mobile" #proj1>
+  <div class="project-wrapper" #proj1>
     <div
       class="img-wrapper"
       (click)="
@@ -22,9 +22,9 @@
       <h1>Join Kanban</h1>
       <h3>JavaScript | CSS | HTML</h3>
       <p>
-        A task manager in Kanban style helps you create and organize tasks using
-        drag-and-drop functions. Users and categories can be assigned to better
-        structure and track tasks. Everything is vanilla (All Vanilla).
+        A task manager in Kanban style that helps you create and organize tasks
+        using drag-and-drop functions. Users and categories can be assigned to
+        better structure and track tasks (All Vanilla).
       </p>
       <a
         class="btn"
@@ -34,6 +34,31 @@
     </div>
   </div>
   <div class="project-wrapper reverse" #proj2>
+    <div
+      class="img-wrapper"
+      (click)="openNewTab('https://crm-system-f7e71.web.app/')"
+    >
+      <img src="./assets/img/toolio.png" alt="" />
+      <div class="project-img-overlay">LIVE TEST</div>
+    </div>
+    <div class="project-text">
+      <h1>Toolio CRM</h1>
+      <h3>Firebase | Angular | TypeScript | HTML | SCSS</h3>
+      <p>
+        A lightweight CRM system built with Angular that allows you to create
+        client accounts, schedule calendar events, upload documents and create
+        projects. I am using this application myself to keep track of client
+        data and to stay synced with client events. A dashboard that displays
+        several metrics helps to keep an overview over everything that is going on.
+      </p>
+      <a
+        class="btn"
+        (click)="openNewTab('https://github.com/MoritzGeorgy95/Angular-CRM')"
+        >GitHub</a
+      >
+    </div>
+  </div>
+  <div class="project-wrapper" #proj3>
     <div
       class="img-wrapper"
       (click)="
@@ -62,7 +87,7 @@
       >
     </div>
   </div>
-  <div class="project-wrapper bg-mobile" #proj3>
+  <div class="project-wrapper reverse" #proj4>
     <div
       class="img-wrapper"
       (click)="openNewTab('https://ring-of-fire-60e71.web.app/')"
@@ -87,7 +112,7 @@
       >
     </div>
   </div>
-  <div class="project-wrapper reverse" #proj4>
+  <div class="project-wrapper" #proj5>
     <div
       class="img-wrapper"
       (click)="
@@ -120,6 +145,5 @@
   <div class="bubble bubble-2"></div>
   <div class="bubble bubble-3"></div>
   <div class="bubble bubble-4"></div>
-  <img src="assets/img/red-blur.png" alt="blur-img" class="blur">
+  <img src="assets/img/red-blur.png" alt="blur-img" class="blur" />
 </div>
-

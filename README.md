@@ -1,6 +1,6 @@
 # My personal homepage
 
-#About 
+#About <br>
 I built my portfolio page with Angular. I used the ngForms Module in combination with the email JS library for my contact form and intersection observers for the flying in animations. No use of bootstrap, tailwind or material design. All Vanilla/ self-built :).If wanted, clone repo and take a look at the code: 
 
 

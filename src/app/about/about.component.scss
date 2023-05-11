@@ -307,3 +307,10 @@
     }
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .about-me-container {
+   outline: 1px solid salmon;
+   overflow-x: hidden;
+  }
+ }

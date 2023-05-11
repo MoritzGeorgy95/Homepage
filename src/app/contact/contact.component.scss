@@ -220,11 +220,19 @@ form {
       display: none;
   }
 
-  .skewed-border {
-    display: none;
-  }
+ 
 
   .contact-container {
     border-top: 2px solid salmon;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .contact-container {
+   height: unset;
+   padding-bottom: 50px;
+   overflow-x: hidden;
+  }
+ }
+
+ 

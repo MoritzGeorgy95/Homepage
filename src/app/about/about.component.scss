@@ -233,9 +233,9 @@
     }
   }
 
-  #linebreak {
-    display: none;
-  }
+  // #linebreak {
+  //   display: none;
+  // }
 
   @keyframes fly-in {
     0% {
@@ -250,10 +250,7 @@
 
 @media screen and (max-width: 530px) {
   .about-me-container {
-    #linebreak {
-      display: initial;
-    }
-
+   
     .bubble {
       display: none;
     }

@@ -233,10 +233,6 @@
     }
   }
 
-  // #linebreak {
-  //   display: none;
-  // }
-
   @keyframes fly-in {
     0% {
       transform: translateX(100%);
@@ -317,5 +313,14 @@
   .about-me-container {
    outline: 1px solid salmon;
    overflow-x: hidden;
+  }
+ }
+
+ @media screen and (max-height: 710px) {
+  .about-me-container {
+    height: unset;
+  }
+  .arrow-container {
+    margin-bottom: 1rem;
   }
  }

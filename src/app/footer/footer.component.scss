@@ -7,6 +7,7 @@
   outline: 2px solid salmon;
   img {
     width: 100px;
+    cursor: pointer;
   }
 
   .info-container {
@@ -68,13 +69,5 @@
     .channel-container {
       margin-top: 2rem;
     }
-  }
-}
-
-@media screen and (max-height: 820px) {
- 
-
-  .fixed {
-    padding: 1rem;
   }
 }

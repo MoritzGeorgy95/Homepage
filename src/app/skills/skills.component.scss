@@ -1,10 +1,9 @@
 .skill-section-container {
   background-color: #141d2f;
-  height: 100vh;
   background-image: url("/assets/img/curve_vector.png");
   background-size: cover;
   text-align: center;
-  padding: 100px 100px 0 100px;
+  padding: 100px;
   position: relative;
   outline: 2px solid salmon;
 
@@ -53,22 +52,9 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
-  .icon-container {
-    row-gap: 50px;
-  }
-}
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 550px) {
   .skill-section-container {
-    height: unset;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
-}
-
-@media screen and (min-width: 2000px) {
- .skill-section-container {
-  height: unset;
-  padding-bottom: 50px;
- }
 }

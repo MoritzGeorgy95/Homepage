@@ -36,6 +36,31 @@
   <div class="project-wrapper reverse" #proj2>
     <div
       class="img-wrapper"
+      (click)="
+        openNewTab(
+          'https://eshop-demo-255dd.web.app/'
+        )
+      "
+    >
+      <img src="./assets/img/Webshop.png" alt="" />
+      <div class="project-img-overlay">LIVE TEST</div>
+    </div>
+    <div class="project-text">
+      <h1>Onlineshop Greenfield Traders</h1>
+      <h3>Firebase | Angular | TypeScript | HTML | SCSS | API</h3>
+      <p>
+        An Angular-based webshop with a comprehensive range of features. Enjoy seamless browsing of dummy products, manage orders and payments effortlessly, utilize a user-friendly login system, and easily track and save favorite items. Experience a modern online shopping solution with this robust Angular application.
+      </p>
+      <a
+        class="btn"
+        (click)="openNewTab('https://github.com/GreenfieldC/e-shop-demo')"
+        >GitHub</a
+      >
+    </div>
+  </div>
+  <div class="project-wrapper" #proj3>
+    <div
+      class="img-wrapper"
       (click)="openNewTab('https://crm-system-f7e71.web.app/')"
     >
       <img src="./assets/img/toolio.png" alt="" />
@@ -43,7 +68,7 @@
     </div>
     <div class="project-text">
       <h1>Toolio CRM</h1>
-      <h3>Firebase | Angular | TypeScript | HTML | SCSS</h3>
+      <h3>Firebase | Angular | TypeScript | HTML | SCSS | API</h3>
       <p>
         A lightweight CRM system built with Angular that allows you to create
         client accounts, schedule calendar events, upload documents and create
@@ -58,7 +83,7 @@
       >
     </div>
   </div>
-  <div class="project-wrapper" #proj3>
+  <div class="project-wrapper reverse" #proj4>
     <div
       class="img-wrapper"
       (click)="
@@ -83,31 +108,6 @@
       <a
         class="btn"
         (click)="openNewTab('https://github.com/MoritzGeorgy95/El-Pollo-Loco')"
-        >GitHub</a
-      >
-    </div>
-  </div>
-  <div class="project-wrapper reverse" #proj4>
-    <div
-      class="img-wrapper"
-      (click)="openNewTab('https://ring-of-fire-60e71.web.app/')"
-    >
-      <img src="./assets/img/ring.png" alt="" />
-      <div class="project-img-overlay">LIVE TEST</div>
-    </div>
-    <div class="project-text">
-      <h1>Ring of Fire</h1>
-      <h3>Firebase | Angular | TypeScript | HTML | CSS</h3>
-      <p>
-        Ring of Fire is a fun multiplayer social game that challenges
-        participants to draw cards and perform certain actions. It guarantees
-        lots of fun and is particularly well-suited for larger groups. This
-        exciting game features real-time data exchange with Firebase for a
-        seamless multiplayer gameplay experience
-      </p>
-      <a
-        class="btn"
-        (click)="openNewTab('https://github.com/MoritzGeorgy95/RingOfFire')"
         >GitHub</a
       >
     </div>
@@ -140,6 +140,32 @@
       >
     </div>
   </div>
+
+  <!-- <div class="project-wrapper reverse" #proj4>
+    <div
+      class="img-wrapper"
+      (click)="openNewTab('https://ring-of-fire-60e71.web.app/')"
+    >
+      <img src="./assets/img/ring.png" alt="" />
+      <div class="project-img-overlay">LIVE TEST</div>
+    </div>
+    <div class="project-text">
+      <h1>Ring of Fire</h1>
+      <h3>Firebase | Angular | TypeScript | HTML | CSS</h3>
+      <p>
+        Ring of Fire is a fun multiplayer social game that challenges
+        participants to draw cards and perform certain actions. It guarantees
+        lots of fun and is particularly well-suited for larger groups. This
+        exciting game features real-time data exchange with Firebase for a
+        seamless multiplayer gameplay experience
+      </p>
+      <a
+        class="btn"
+        (click)="openNewTab('https://github.com/MoritzGeorgy95/RingOfFire')"
+        >GitHub</a
+      >
+    </div>
+  </div> -->
 
   <div class="bubble bubble-1"></div>
   <div class="bubble bubble-2"></div>
